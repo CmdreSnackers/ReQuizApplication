@@ -40,7 +40,7 @@ class QuizAdp(
     {
         fun bind(quiz: Quiz) {
             binding.run {
-                quizId.text = "Quiz Id: ${quiz.quiz_Id}"
+                quizId.text = "Quiz Id: ${quiz.QuizId}"
                 quizTitle.text = "Title: ${quiz.title}"
                 quizDate.text = "Created By: ${quiz.creator}"
             }

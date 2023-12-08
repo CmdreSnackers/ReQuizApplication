@@ -56,7 +56,7 @@ class QuizRepoImpl(
 
     override suspend fun addQuiz(quiz: Quiz)
     {
-        getDbRef().document(quiz.quiz_Id).set(quiz.toHashMap()).await()
+        getDbRef().document(quiz.QuizId).set(quiz.toHashMap()).await()
     }
 
     override suspend fun getQuizById(id: String): Quiz?
