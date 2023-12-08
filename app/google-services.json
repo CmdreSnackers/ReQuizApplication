@@ -1,0 +1,86 @@
+{
+  "project_info": {
+    "project_number": "134208658078",
+    "project_id": "apiappv2-2c6e1",
+    "storage_bucket": "apiappv2-2c6e1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:134208658078:android:63b631abd0fbe724afb98f",
+        "android_client_info": {
+          "package_name": "com.example.quizwiz"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB87TIhUU_hZ1WmEGVji9jq05xTfwFZz9Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:134208658078:android:4f70f6cbcfde6703afb98f",
+        "android_client_info": {
+          "package_name": "com.sw.apiapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB87TIhUU_hZ1WmEGVji9jq05xTfwFZz9Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:134208658078:android:0dd87c76d08bfe5aafb98f",
+        "android_client_info": {
+          "package_name": "com.sw.requizapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB87TIhUU_hZ1WmEGVji9jq05xTfwFZz9Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:134208658078:android:14fb5ae6ca18e07bafb98f",
+        "android_client_info": {
+          "package_name": "com.sw.triviadata"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB87TIhUU_hZ1WmEGVji9jq05xTfwFZz9Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

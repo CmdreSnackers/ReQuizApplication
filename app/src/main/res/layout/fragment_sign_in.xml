@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:padding="15dp"
+    android:background="@color/green"
+    tools:context=".ui.screens.signInScreen.SignInFragment">
+
+    <ImageView
+        android:id="@+id/logImg"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ic_person"
+        android:layout_gravity="center"
+        android:contentDescription="@string/prof_pic" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox.Dense">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/logEmail"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:hint="@string/email"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox.Dense">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/logPass"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:hint="@string/password"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/logSubBtn"
+        android:layout_gravity="center"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        style="@style/ShapeAppearanceOverlay.Material3.Button"
+        app:cornerRadius="4dp"
+        android:backgroundTint="@color/black"
+        android:text="@string/login"
+        />
+
+    <TextView
+        android:id="@+id/logToReg"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        style="@style/TextAppearance.Material3.TitleMedium"
+        android:text="@string/not_registered_register_here"
+        />
+
+</LinearLayout>

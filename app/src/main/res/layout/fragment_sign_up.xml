@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:padding="15dp"
+    android:background="@color/green"
+    tools:context=".ui.screens.signUpScreen.SignUpFragment">
+
+    <ImageView
+        android:id="@+id/regImg"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ic_person"
+        android:layout_gravity="center"
+        android:contentDescription="@string/prof_pic" />
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox.Dense">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/regName"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:hint="@string/name"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox.Dense">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/regEmail"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:hint="@string/email"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox.Dense">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/regPass"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:hint="@string/password"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox.Dense">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/conRegPass"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:hint="@string/confirm_password"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu">
+
+        <AutoCompleteTextView
+            android:id="@+id/regRole"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:hint="@string/role"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/regSubBtn"
+        android:layout_gravity="center"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        style="@style/ShapeAppearanceOverlay.Material3.Button"
+        app:cornerRadius="4dp"
+        android:backgroundTint="@color/black"
+        android:text="@string/register"
+        />
+
+    <TextView
+        android:id="@+id/regToLog"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        style="@style/TextAppearance.Material3.TitleMedium"
+        android:text="@string/already_registered_login_here"
+        />
+
+</LinearLayout>

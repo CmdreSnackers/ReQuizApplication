@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:backgroundTint="@color/blue"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="6dp">
+
+    <LinearLayout
+        android:id="@+id/quizList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/quizId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="@string/id"
+            style="@style/TextAppearance.Material3.TitleLarge" />
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/quizTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="@string/title"
+            style="@style/TextAppearance.Material3.TitleMedium" />
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/quizDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="@string/created_by"
+            style="@style/TextAppearance.Material3.TitleSmall" />
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

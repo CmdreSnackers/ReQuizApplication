@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:padding="5dp"
+    android:background="@color/green"
+    tools:context=".ui.screens.teachScreen.TeachFragment">
+
+    <TextView
+        android:id="@+id/teachTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:textSize="30sp"
+        android:text="@string/teacher_s_dashboard" />
+
+    <LinearLayout
+        android:id="@+id/llTeachQuiz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="15dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/teachQuizBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/ShapeAppearanceOverlay.Material3.Button"
+            app:cornerRadius="4dp"
+            android:backgroundTint="@color/black"
+            android:layout_marginBottom="15dp"
+            android:text="@string/create_quiz" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvTeachQuiz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/addFragment">
+
+    <action android:id="@+id/teacher_dash_to_add_quiz"
+        app:popUpTo="@id/teachFragment"
+        app:popUpToInclusive="true"
+        app:destination="@+id/addQuizFragment" />
+
+    <action android:id="@+id/add_quiz_to_teacher_dash"
+        app:popUpTo="@id/addQuizFragment"
+        app:popUpToInclusive="true"
+        app:destination="@+id/teachFragment" />
+    <action
+        android:id="@+id/login_to_register"
+        app:popUpTo="@id/signInFragment"
+        app:popUpToInclusive="true"
+        app:destination="@id/signUpFragment" />
+
+    <action
+        android:id="@+id/register_to_login"
+        app:popUpTo="@id/signUpFragment"
+        app:popUpToInclusive="true"
+        app:destination="@id/signInFragment" />
+
+    <action android:id="@+id/quiz_to_dash"
+        app:popUpTo="@id/quizFragment"
+        app:popUpToInclusive="true"
+        app:destination="@+id/studentFragment" />
+
+    <action android:id="@+id/join_quiz_to_quiz"
+        app:popUpTo="@id/joinFragment"
+        app:popUpToInclusive="true"
+        app:destination="@+id/quizFragment" />
+
+    <action
+        android:id="@+id/student_dash_to_join_quiz"
+        app:popUpTo="@id/studentFragment"
+        app:popUpToInclusive="true"
+        app:destination="@id/joinFragment" />
+
+    <action
+        android:id="@+id/login_to_student_dash"
+        app:popUpTo="@id/signInFragment"
+        app:popUpToInclusive="true"
+        app:destination="@id/studentFragment" />
+
+    <action
+        android:id="@+id/login_to_teacher_dash"
+        app:popUpTo="@id/signInFragment"
+        app:popUpToInclusive="true"
+        app:destination="@id/teachFragment" />
+
+    <action
+        android:id="@+id/profile_to_login"
+        app:popUpTo="@id/profFragment"
+        app:popUpToInclusive="true"
+        app:destination="@id/signInFragment" />
+
+    <fragment
+        android:id="@+id/addFragment"
+        android:name="com.sw.requizapplication.ui.screens.addQuizScreen.AddFragment"
+        android:label="fragment_add"
+        tools:layout="@layout/fragment_add" />
+    <fragment
+        android:id="@+id/joinFragment"
+        android:name="com.sw.requizapplication.ui.screens.joinScreen.JoinFragment"
+        android:label="fragment_join"
+        tools:layout="@layout/fragment_join" />
+    <fragment
+        android:id="@+id/leaderBoardFragment"
+        android:name="com.sw.requizapplication.ui.screens.leaderBoard.LeaderBoardFragment"
+        android:label="fragment_leader_board"
+        tools:layout="@layout/fragment_leader_board" />
+    <fragment
+        android:id="@+id/profFragment"
+        android:name="com.sw.requizapplication.ui.screens.profScreen.ProfFragment"
+        android:label="fragment_prof"
+        tools:layout="@layout/fragment_prof" />
+    <fragment
+        android:id="@+id/quizFragment"
+        android:name="com.sw.requizapplication.ui.screens.quizScreen.QuizFragment"
+        android:label="fragment_quiz"
+        tools:layout="@layout/fragment_quiz">
+        <argument app:argType="string"
+            android:name="quizId" />
+    </fragment>
+    <fragment
+        android:id="@+id/signInFragment"
+        android:name="com.sw.requizapplication.ui.screens.signInScreen.SignInFragment"
+        android:label="fragment_sign_in"
+        tools:layout="@layout/fragment_sign_in" >
+        <action
+            android:id="@+id/action_signInFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.sw.requizapplication.ui.screens.signUpScreen.SignUpFragment"
+        android:label="fragment_sign_up"
+        tools:layout="@layout/fragment_sign_up" />
+    <fragment
+        android:id="@+id/studentFragment"
+        android:name="com.sw.requizapplication.ui.screens.studentScreen.StudentFragment"
+        android:label="fragment_student"
+        tools:layout="@layout/fragment_student" />
+    <fragment
+        android:id="@+id/teachFragment"
+        android:name="com.sw.requizapplication.ui.screens.teachScreen.TeachFragment"
+        android:label="fragment_teach"
+        tools:layout="@layout/fragment_teach" />
+
+    <action android:id="@+id/action_global_studentFragment"
+        app:destination="@id/studentFragment"/>
+</navigation>

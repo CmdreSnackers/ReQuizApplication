@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">ReQuizApplication</string>
+    <string name="not_registered_register_here">Not Registered? Register Here</string>
+    <string name="register">Register</string>
+    <string name="prof_pic">Prof Pic</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="email">Email</string>
+    <string name="name">Name</string>
+    <string name="password">Password</string>
+    <string name="teacher_s_dashboard">Teacher\'s Dashboard</string>
+    <string name="create_quiz">Create Quiz</string>
+    <string name="student_dashboard">Student Dashboard</string>
+    <string name="join_quiz">Join Quiz</string>
+    <string name="role">Role</string>
+    <string name="already_registered_login_here">Already Registered? Login Here</string>
+    <string name="login">Login</string>
+    <string name="score">Score</string>
+    <string name="marks">Marks</string>
+    <string name="your_marks">Your Marks</string>
+    <string name="marks_n_a">Marks: N/A</string>
+    <string name="finished">Finished</string>
+    <string name="id">ID</string>
+    <string name="created_by">Created by</string>
+    <string name="title">Title</string>
+    <string name="time_n_a">Time : N/A</string>
+    <string name="question">Question</string>
+    <string name="next">Next</string>
+    <string name="username">Username</string>
+    <string name="quiz_id">Quiz Id</string>
+    <string name="profile_picture_of_user">Profile Picture of User</string>
+    <string name="editing_mode">Editing Mode</string>
+    <string name="mobile_000_400_4774">Mobile: 000-400-4774</string>
+    <string name="email_wishihadnt_gmail_com">Email : WishIhadnt@gmail.com</string>
+    <string name="enter_quiz_id">Enter Quiz ID</string>
+    <string name="set_time">Set Time</string>
+    <string name="selected_file">Selected File</string>
+    <string name="select_csv_file">Select CSV File</string>
+    <string name="leaderboard">LeaderBoard</string>
+    <string name="ranking_by_id">Ranking by ID</string>
+    <string name="logout">Logout</string>
+
+    <string-array name="rolesArray">
+        <item>Teacher</item>
+        <item>Student</item>
+    </string-array>
+
+</resources>

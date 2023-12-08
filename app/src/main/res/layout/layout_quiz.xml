@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/green"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/markTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/TextAppearance.Material3.TitleLarge"
+        android:text="@string/your_marks"
+        android:textSize="45sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/markScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        style="@style/TextAppearance.Material3.TitleLarge"
+        android:text="@string/marks_n_a"
+        android:textSize="30sp"
+        android:textStyle="bold|italic" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/markFinish"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="100dp"
+        android:layout_gravity="center"
+        style="@style/ShapeAppearanceOverlay.Material3.Button"
+        app:cornerRadius="4dp"
+        android:textSize="25sp"
+        android:backgroundTint="@color/black"
+        android:layout_marginBottom="15dp"
+        android:text="@string/finished" />
+
+</LinearLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/green"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="20dp"
+    tools:context=".ui.screens.addQuizScreen.AddFragment">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox.Dense">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/enterId"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:hint="@string/enter_quiz_id"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox.Dense">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/setTitle"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:hint="@string/title"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox.Dense">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/setTimer"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:hint="@string/set_time"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:layout_gravity="center"
+        android:id="@+id/selectedFile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/selected_file"
+        android:layout_marginTop="36dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_gravity="center"
+        android:id="@+id/selectCSV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/select_csv_file"
+        app:cornerRadius="4dp"/>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_gravity="center"
+        android:id="@+id/addQuizBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cornerRadius="4dp"
+        android:text="@string/create_quiz"
+        android:layout_marginTop="15dp" />
+
+</LinearLayout>
