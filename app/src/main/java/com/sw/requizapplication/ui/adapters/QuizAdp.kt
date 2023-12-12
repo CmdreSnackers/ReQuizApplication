@@ -3,6 +3,7 @@ package com.sw.requizapplication.ui.adapters
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+
 import com.sw.requizapplication.data.models.Quiz
 import com.sw.requizapplication.databinding.LayoutItemBinding
 

@@ -6,6 +6,7 @@
     android:orientation="vertical"
     android:layout_gravity="center"
     android:padding="10dp"
+    android:background="@color/green"
     tools:context=".ui.screens.leaderBoard.LeaderBoardFragment">
 
     <TextView
